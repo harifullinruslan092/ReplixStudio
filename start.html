@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Size Animation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .animation-container {
+            height: 100vh;
+            /* Full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .full-size-animation {
+            width: 100%;
+            height: 100%;
+            background-color: #f0f0f0;
+            /* Background color of the animation */
+            /* Add animation CSS properties here */
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.php">
+        <video class="full-size-animation" autoplay mute>
+            <source src="static/videos/start.mp4" type="video/mp4" id="animationVideo">
+            Your browser does not support the video tag.
+        </video>
+    </a>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function () {
+            // Redirect to index php
+            window.location.href = 'index.php';
+        }, 4150);
+    });
+
+</script>
+
+</html>

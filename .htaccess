@@ -1,0 +1,9 @@
+
+ RewriteEngine On
+RewriteRule ^/$ /?page=home [R=301,L]
+RewriteRule ^/dashboard/$ dashboard.php [R=301,L]
+
+DirectoryIndex index.php
+
+RewriteCond ^/index/$  ^/index\.php$
+RewriteRule ^ / [R=301,L]
